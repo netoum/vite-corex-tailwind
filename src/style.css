@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans+Mono:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+@import "tailwindcss";
+@import "@netoum/corex-tailwind";
+/* For different themes and modes use one of the following instead */
+/* @import "@netoum/corex-tailwind/neo.css"; */
+/* @import "@netoum/corex-tailwind/neo/light.css"; */
+/* @import "@netoum/corex-tailwind/neo/dark.css"; */
+
+/* @import "@netoum/corex-tailwind/revo.css"; */
+/* @import "@netoum/corex-tailwind/revo/light.css"; */
+/* @import "@netoum/corex-tailwind/revo/dark.css"; */
+
+/* @import "@netoum/corex-tailwind/uno.css"; */
+/* @import "@netoum/corex-tailwind/uno/light.css"; */
+/* @import "@netoum/corex-tailwind/uno/dark.css"; */
+
+/* Or for individual imports */
+/* @import "@netoum/corex-tailwind/tokens/global/color.css";
+@import "@netoum/corex-tailwind/tokens/global/border.css";
+@import "@netoum/corex-tailwind/tokens/global/font.css";
+@import "@netoum/corex-tailwind/tokens/global/dimension.css";
+@import "@netoum/corex-tailwind/tokens/neo/light/semantic/border.css";
+@import "@netoum/corex-tailwind/tokens/neo/light/semantic/color.css";
+@import "@netoum/corex-tailwind/tokens/neo/light/semantic/dimension.css";
+@import "@netoum/corex-tailwind/tokens/neo/light/semantic/font.css";
+
+@import "@netoum/corex-tailwind/components/accordion.css";
+@import "@netoum/corex-tailwind/components/avatar.css";
+@import "@netoum/corex-tailwind/components/badge.css";
+@import "@netoum/corex-tailwind/components/button.css";
+@import "@netoum/corex-tailwind/components/checkbox.css";
+@import "@netoum/corex-tailwind/components/clipboard.css";
+@import "@netoum/corex-tailwind/components/collapsible.css";
+@import "@netoum/corex-tailwind/components/dialog.css";
+@import "@netoum/corex-tailwind/components/link.css";
+@import "@netoum/corex-tailwind/components/listbox.css";
+@import "@netoum/corex-tailwind/components/menu.css";
+@import "@netoum/corex-tailwind/components/switch.css";
+@import "@netoum/corex-tailwind/components/switcher.css";
+@import "@netoum/corex-tailwind/components/tabs.css";
+@import "@netoum/corex-tailwind/components/toggle-group.css";
+@import "@netoum/corex-tailwind/components/tree-view.css"; */
+
+
+body {
+    font-family: var(--font-family);
+
+    @apply min-h-screen flex flex-col 
+           bg-layer 
+           text-contrast-2
+           font-(family-name:--font-family)
+           font-(--font-size)
+           tracking-(--font-letter-spacing-4)
+           leading-(--font-line-height);
+    
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-wrap: pretty;
+}
+
+header {
+    @apply flex flex-wrap items-center justify-center 
+           gap-(--gap-ui) 
+           p-(--padding-ui);
+}
+
+.logo {
+    @apply h-8 
+           text-(--color-accent-brand) 
+           hover:text-(--color-accent-brand-1)
+           transition-colors duration-200;
+}
+
+main {
+    @apply flex justify-start items-center 
+           max-w-3xl w-full mx-auto 
+           p-(--padding-ui);
+}
+
+.preview {
+    @apply flex flex-wrap gap-(--gap-ui);
+}
+
+
