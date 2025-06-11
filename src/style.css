@@ -55,7 +55,7 @@ header {
 }
 
 main {
-    @apply flex justify-start items-center max-w-3xl w-full mx-auto p-(--padding-ui);
+    @apply flex flex-col justify-start items-center max-w-3xl w-full mx-auto p-(--padding-ui);
 }
 
 .preview {
